@@ -1,0 +1,26 @@
+(function (factory) {
+    if (typeof module === "object" && typeof module.exports === "object") {
+        var v = factory(require, exports);
+        if (v !== undefined) module.exports = v;
+    }
+    else if (typeof define === "function" && define.amd) {
+        define(["require", "exports"], factory);
+    }
+})(function (require, exports) {
+    "use strict";
+    Object.defineProperty(exports, "__esModule", { value: true });
+    /**
+     * 如果数字小于10前面自动添加0
+     * @param {number} num 数字
+     * @return {string} 处理后的字符串
+     * @example
+     * addZero(9);
+     * // '09'
+     * addZero(11);
+     * // '11'
+     */
+    function addZero(num) {
+        return (num >= 0 && num < 10) ? `0${num}` : String(num);
+    }
+    exports.default = addZero;
+});

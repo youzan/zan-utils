@@ -1,5 +1,5 @@
 {
-  "name": "zan-utils",
+  "name": "zan-utils--umd",
   "version": "0.0.1",
   "scripts": {
     "dev": "utils-scripts dev",
@@ -7,7 +7,9 @@
     "test": "utils-scripts test",
     "publish": "utils-scripts publish"
   },
-  "dependencies": {
-    "utils-scripts": "0.0.5-alpha.0"
-  }
+  "devDependencies": {
+    "utils-scripts": "0.0.5-alpha.0",
+    "typescript": "^3.2.2"
+  },
+  "types": "./types/index.d.ts"
 }
