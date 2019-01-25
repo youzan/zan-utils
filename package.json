@@ -1,13 +1,15 @@
 {
   "name": "zan-utils",
-  "version": "0.0.1",
+  "version": "0.0.1-beta1",
   "scripts": {
     "dev": "utils-scripts dev",
     "build": "utils-scripts build",
     "test": "utils-scripts test",
     "publish": "utils-scripts publish"
   },
-  "dependencies": {
-    "utils-scripts": "0.0.5-alpha.0"
-  }
+  "devDependencies": {
+    "utils-scripts": "0.0.5-alpha.0",
+    "typescript": "^3.2.2"
+  },
+  "types": "./index.d.ts"
 }

@@ -1,3 +1,5 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 /**
  * 如果数字小于10前面自动添加0
  * @param {number} num 数字
@@ -8,7 +10,7 @@
  * addZero(11);
  * // '11'
  */
-function addZero(num: number) {
-  return (num >= 0 && num < 10) ? `0${num}` : String(num);
+function addZero(num) {
+    return (num >= 0 && num < 10) ? `0${num}` : String(num);
 }
-export default addZero;
+exports.default = addZero;
